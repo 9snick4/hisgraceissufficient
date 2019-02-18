@@ -1,0 +1,57 @@
+body.container{
+  background-image: url(sfondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#play, #rewind, #fastforward{
+	width: 80px;
+	height: 80px;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	cursor: pointer;
+	border: none;	
+}
+#player{position: relative;left: 50%; transform: translateX(-50%); margin-top: 30px;}
+#play{	background: url(play.png); }
+.pause{ background: url(pause.png) !important; }
+#rewind{ 	background: url(rewind.png); }
+#fastforward{ 	background: url(rewind.png); transform: rotate(180deg);}
+#controlls{
+	width: 250px;
+	margin: auto;
+	margin-top: 50px;
+}
+#result1,#result2{margin-top:5px;font-size: 45px; text-align: center; overflow: hidden; color: #fff}
+#typedtext{font-size: 45px;}
+
+/* Animation */
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: unset; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@media (max-width: 767px){
+#result1{ font-size: 30px;line-height: 40px; }
+}
+
+
+@media (max-width: 700px){
+  #player{max-width: 100%;}
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}

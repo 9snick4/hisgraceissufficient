@@ -10,7 +10,7 @@
 <body>
 	<h1>Sintel</h1>
 	<figure id="videoContainer" data-fullscreen="false">
-		<video id="video-controls" controls preload="metadata">
+		<video id="video" controls preload="metadata">
 			<source src="brad.mp4" type="video/mp4">
 			<track label="English" kind="subtitles" srclang="en" src="sub-en.vtt" default>
 		</video>

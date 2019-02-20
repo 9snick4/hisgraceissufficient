@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IE">
 <head>
-	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-	<title>His Grace is Sufficient</title>
-
-	<link rel="stylesheet" type="text/css" href="custom.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+	<meta charset="utf-8" />
+	<title>Video Player with Subtitles - Mozilla</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<link rel="stylesheet" href="styles.css" />
 </head>
-<body class="container">	
-	<video id="player" preload width="700" controls >
-  		<source src="brad.mp4" type="video/mp4">
- 		Your browser does not support HTML5 video.
-	</video>
-<!-- 		<button id="rewind"></button>
-		<button id="play"></button>
-		<button id="fastforward"></button>	 -->
-	</div>
-	<div id="typedtext"></div>
-	<div id="result1"></div>
-	<div id="result2"></div>
+<body>
+	<h1>Sintel</h1>
+	<figure id="videoContainer" data-fullscreen="false">
+		<video id="video-controls" controls preload="metadata">
+			<source src="brad.mp4" type="video/mp4">
+			<track label="English" kind="subtitles" srclang="en" src="sub-en.vtt" default>
+		</video>
+		<figcaption>
+			&copy; copyright Blender Foundation | <a href="http://www.sintel.org">www.sintel.org</a>
+		</figcaption>
+	</figure>
 </body>
-
-<script src="js.js"></script>
-
+<script src="videoASD.js"></script>
 </html>
